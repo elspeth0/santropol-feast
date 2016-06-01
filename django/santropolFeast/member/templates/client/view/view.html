@@ -18,7 +18,10 @@
 
 <div class="ui grid">
     <div class="sixteen wide column">
-        <h1 class="ui header">{{client}}</h1>
+        <h1 class="ui header">
+            {{client}}
+            <div class="sub header">Client since {{ client.member.created_at|date:"m/Y" }}</div>
+        </h1>
     </div>
     <div class="sixteen wide column">
         <div class="ui warning message">
